@@ -8,7 +8,6 @@ m<!DOCTYPE html>
       text-align: center;
       background-color: lightblue;
       margin-top: 20px;
-      display: none;
     }
   </style>
   
@@ -34,8 +33,10 @@ m<!DOCTYPE html>
   </div>
   
   <script>
+    var x =document.getElementById("myDIV").style.display = "none";
+    
     function myFunction() {
-      var x = document.getElementById("myDIV");
+      //var x = document.getElementById("myDIV");
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {
